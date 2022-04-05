@@ -7,29 +7,65 @@
     <meta name="keywords" content="fruits, business">
     <meta name="description" content="магазин полезной еды" >
     <title>Pastila LSV</title>
+    <style>
+@media (max-width: 1200px) {
+    .photo {
+        font-size: 1rem;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .container {
+        font-size: 1.5rem;
+                padding: 10px;
+                text-align: center;
+    }
+}
+
+    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <img src="https://sun9-9.userapi.com/impf/sbfhJcZYrBzNx07nSyJQdlHFu7shaR90L8V_vQ/N5nH0xfVgd0.jpg?size=480x480&quality=96&sign=a45f854a119409046ec127cd9890e11f&type=album">
+
+<div class="photo">
+    <img class="avatar" src="https://sun9-9.userapi.com/impf/sbfhJcZYrBzNx07nSyJQdlHFu7shaR90L8V_vQ/N5nH0xfVgd0.jpg?size=480x480&quality=96&sign=a45f854a119409046ec127cd9890e11f&type=album">
+
+
+
+
+ <div class="name"> 
     <h1>Александр Зорин</h1>
-    <p>Я работаю <strong>водителем</strong> пожарного автомобиля и хочу стать <strong>разработчиком</strong></p>
-    <p>Я люблю <em>слушать музыку</em> и <em>играть</em> в компьютерные игры</p>
-    <p> Мой <a href="https://vk.com/greenmust" target="_blank">ВК</a> и <a href="https://web.telegram.org/z/#-1605684132" target="_blank">Телега</a></p>
-    <br>
+ </div>       
+
+
+
+ <div class="info">
+    <p>Я работаю водителем пожарного автомобиля и хочу стать разработчиком</p>
+    <p>Я люблю слушать музыку и играть в компьютерные игры</p>
+    <p> Мой <a href="https://vk.com/greenmust" target="_blank">VK</a> и <a class="telega" href="https://web.telegram.org/z/#-1605684132" target="_blank">Telegram</a></p>
+ </div>
+</div> 
+
+
+<div class="container">
+ <div class="card hobby">
     <h1>Мои увлечения</h1>
-    <ul>
+    <ul class="list">
         <li>Музыка</li>
         <li>Фильмы</li>
         <li>Игры</li>
         <li>Лыжи</li>
     </ul>
-
+</div>    
+<br>
+<div class="card workskill">
     <h1>Опыт работы</h1>
-    <table>
+    <table class="table">
         <thead>
             <tr>
             <th>Название</th>
             <th>Должность</th>
-            <th>Год</th>
+            <th class="year">Год</th>
         </tr>
         </thead>
         <tbody>
@@ -46,26 +82,35 @@
             <tr>
                 <td>МЧС</td>
                 <td>Водитель</td>
-                <td>2020-сейчас</td>
+                <td>2020 - настоящее время</td>
             </tr>
         </tbody>
     </table>
- <h1>Связаться со мной</h1>
- <div>
+</div>
+<br>
+<form action="/">
+
+    <div class="card callme">
+<h1>Связаться со мной</h1>
+    <div class="form-row"> 
+<div class="form-group">
      <label for="Имя">Ваше имя:</label>
      <input type="Имя" name="Имя" id="Имя" placeholder="Введите имя">
  </div>
- <div>
+ <div class="form-group">
     <label for="email">Ваш email:</label>
     <input type="email" id="email" placeholder="Введите email">
 </div>
-<div>
+</div>
+<div class="form-group">
     <label for="Сообщение">Ваше сообщение:</label>
-    <br>
     <textarea name="Сообщение" id="Сообщение" cols="30" rows="10" placeholder="Введите сообщение"></textarea>
 </div>
+</form>
 <div>
-    <button type="submit">Отправить!</button>
+    <button class="btn">Отправить!</button>
+</div>
+</div>
 </div>
 
 
